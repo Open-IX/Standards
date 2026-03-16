@@ -28,7 +28,7 @@ exhibit Extreme Density (often 40–100+ kW per rack), necessitating advanced
 liquid cooling. Unlike traditional enterprise data centers prioritizing
 absolute uptime (2N redundancy), AI Factories may accept reduced electrical
 redundancy (e.g., N+1 or N) to maximize raw power capacity and cooling
-efficiency, as workloads are generally checkpointed.
+efficiency, as workloads are generally check-pointed.
 
 **Colocation Data Center (Colo / MTDC)**
 Third-party, multi-tenant facilities where the provider constructs and manages
@@ -36,7 +36,7 @@ the physical infrastructure (power, cooling, security), and tenants lease space
 (racks, cages, suites) for their hardware. Enables organizations to outsource
 data center requirements, shifting from CAPEX to OPEX while gaining
 enterprise-grade infrastructure. Often utilized as a hub for interconnection and
-hybrid cloud architectures.
+hybrid cloud architectures. See also: Multi-Tenant Data Center
 
 **Carrier Hotel (Telco Hotel)**
 A specialized colocation data center typically in central urban locations,
@@ -96,8 +96,7 @@ The largest classification based on rack count, accommodating 9,000+ racks with
 power demands typically exceeding 100MW, serving massive cloud operations.
 
 **Multi-Tenant Data Center (MTDC)**
-A large infrastructure facility shared by multiple distinct organizations where
-logical and physical separation of resources is meticulously maintained.
+Synonym for Colocation Data Center
 
 **Data Center Campus**
 A regionally local cluster of Data Centers operated by a single entity, allowing
@@ -127,13 +126,13 @@ for technical sizing.
 The power draw per rack, expressed in kW/rack, which determines the required
 cooling architecture.
 
-* **Low Density**: <5 kW/rack (Legacy enterprise).
+- **Low Density**: <5 kW/rack (Legacy enterprise).
 
-* **Standard / Medium Density**: 5–10 kW/rack (Modern retail colo / general cloud).
+- **Standard / Medium Density**: 5–10 kW/rack (Modern retail colo / general cloud).
 
-* **High Density**: 10–30 kW/rack (Intensive virtualization / storage arrays).
+- **High Density**: 10–30 kW/rack (Intensive virtualization / storage arrays).
 
-* **Ultra-High / Extreme Density / AI-Ready**: >30 kW/rack. Air cooling becomes
+- **Ultra-High / Extreme Density / AI-Ready**: >30 kW/rack. Air cooling becomes
   infeasible, necessitating liquid cooling.
 
 **Liquid Cooling**
@@ -169,19 +168,19 @@ Decentralized physical facilities strategically situated near end-users or
 primary data sources. Essential for ultra-low latency applications (5G, IoT,
 autonomous vehicles). IT load capacity typically ranges from 50 kW to 500 kW.
 
-* **Extra Small**: Extra Small Edge Facility - Street Furniture or Pole/Wall
+- **Extra Small**: Extra Small Edge Facility - Street Furniture or Pole/Wall
   Mounted System.
 
-* **Small**: Small Edge Facility. Entry Level. Small Cabinet System or Street
+- **Small**: Small Edge Facility. Entry Level. Small Cabinet System or Street
   Furniture 0-4 Racks.
 
-* **Medium**: Medium Edge Facility. 4-14 Racks. Basic Redundancy, Low to
+- **Medium**: Medium Edge Facility. 4-14 Racks. Basic Redundancy, Low to
   Moderate Density.
 
-* **Large**: Large Edge Facility. 8-24 Cabinets/Racks. Moderate Redundancy or
+- **Large**: Large Edge Facility. 8-24 Cabinets/Racks. Moderate Redundancy or
   High Density.
 
-* **Extra Large**: XL Edge Facility. 24+ Cabinets/Racks. High Density. High
+- **Extra Large**: XL Edge Facility. 24+ Cabinets/Racks. High Density. High
   Redundancy.
 
 **Regional Edge / Metro Edge**
@@ -262,10 +261,10 @@ Cloud On-Ramps, CDNs, and IXPs.
 **Peering (Paid vs. Settlement-Free)**
 The reciprocal exchange of traffic between distinct networks.
 
-* **Settlement-Free Peering**: Networks exchange traffic without exchanging
+- **Settlement-Free Peering**: Networks exchange traffic without exchanging
   money, assuming mutual benefit.
 
-* **Paid Peering**: One network pays the other for access to their network
+- **Paid Peering**: One network pays the other for access to their network
   routing table, often bordering on transit agreements.
 
 **Cloud Onramp**
@@ -291,11 +290,11 @@ two or more data centers over short, medium, or long distances.
 
 **Layer 2 vs. Layer 3 Interconnect**
 
-* **Layer 2 Interconnect**: Connects networks at the Data Link layer (MAC
+- **Layer 2 Interconnect**: Connects networks at the Data Link layer (MAC
   addresses, VLANs). Used heavily in IXPs to allow peering across a shared
   broadcast domain.
 
-* **Layer 3 Interconnect**: Connects networks at the Network layer via routing
+- **Layer 3 Interconnect**: Connects networks at the Network layer via routing
   protocols (IP addresses, BGP, OSPF).
 
 **VxLAN (Virtual Extensible LAN)**
@@ -363,20 +362,20 @@ cables.
 
 **IXP Member, Participant, and Customer Terminology**
 
-* **Participant**: Broadly, any entity physically and logically connected to an
+- **Participant**: Broadly, any entity physically and logically connected to an
   IXP switching fabric.
 
-* **Member**: An entity that participates in an IXP, often implying governance,
+- **Member**: An entity that participates in an IXP, often implying governance,
   voting rights, or cooperative ownership (especially in non-profit/community
   IXPs).
 
-* **Customer**: An entity paying for access to an IXP, a term usually favored by
+- **Customer**: An entity paying for access to an IXP, a term usually favored by
   For-Profit IXP operators.
 
-* **Member Network**: The actual Autonomous System (AS) and physical routing
+- **Member Network**: The actual Autonomous System (AS) and physical routing
   equipment terminating the connection.
 
-* **IX End User**: The consumer or enterprise downstream from the peering
+- **IX End User**: The consumer or enterprise downstream from the peering
   networks, whose traffic is improved by the IXP.
 
 ## V. Facility Infrastructure and Operations
@@ -399,19 +398,19 @@ synchronize.
 
 **Power Distribution Unit (PDU)**
 
-* **Floor PDU / Remote Power Panel (RPP)**: Standalone cabinets downstream from
+- **Floor PDU / Remote Power Panel (RPP)**: Standalone cabinets downstream from
   the UPS that step down facility voltage to usable rack voltage and distribute
   it via circuit breakers to the data hall rows.
 
-* **Rack PDU (rPDU)**: The power strip mounted directly inside the IT cabinet,
+- **Rack PDU (rPDU)**: The power strip mounted directly inside the IT cabinet,
   ranging from basic distribution to fully metered, remotely switched models.
 
 **CRAC / CRAH**
 
-* **CRAC (Computer Room Air Conditioner)**: Uses a built-in compressor and
+- **CRAC (Computer Room Air Conditioner)**: Uses a built-in compressor and
   chemical refrigerants to cool the air.
 
-* **CRAH (Computer Room Air Handler)**: Uses fans and cooling coils through
+- **CRAH (Computer Room Air Handler)**: Uses fans and cooling coils through
   which chilled water (supplied by a central plant) circulates to remove heat.
 
 **Hot Aisle / Cold Aisle**
@@ -443,10 +442,10 @@ response.
 ## VI. Construction and Form Factors
 
 **Base Building**
-Shall designate the fee simple ownership and/or control of the underlying real
-estate. This entity ultimately controls the right of network entry, but may
-grant broad and open rights of access to the MMR Operator or Data Center
-Provider as defined below.
+Refers to the entity holding fee simple ownership or primary control of the
+underlying real estate. While this entity retains ultimate authority over
+network entry rights, it may delegate broad access privileges to an MMR Operator
+or Data Center Provider.
 
 **Brownfield Data Center**
 Existing structures retrofitted for data center use. Facilitates expedited
@@ -480,10 +479,10 @@ build-out.
 
 **Underground / Floating Data Centers**
 
-* **Underground**: Built in mines/bunkers; provides physical hardening and
+- **Underground**: Built in mines/bunkers; provides physical hardening and
   natural thermal regulation.
 
-* **Floating (Data Barges)**: Situated on vessels leveraging surrounding water
+- **Floating (Data Barges)**: Situated on vessels leveraging surrounding water
   for highly efficient heat rejection.
 
 ## VII. Security and Access
@@ -496,11 +495,11 @@ biometric/badge authentication.
 
 **Anti-Tailgating / Anti-Passback**
 
-* **Anti-tailgating**: Sensor or turnstile systems designed to prevent an
+- **Anti-tailgating**: Sensor or turnstile systems designed to prevent an
   unauthorized individual from following an authorized person through a secure
   doorway.
 
-* **Anti-passback**: System programming that prevents a credential holder from
+- **Anti-passback**: System programming that prevents a credential holder from
   passing their badge backward through a door for another person to use.
 
 **Biometric Access Control**
@@ -534,16 +533,16 @@ required for their job function, rather than granting blanket facility access.
 **Uptime Institute Tiers**
 The international standard for classifying data center availability:
 
-* **Tier I (Basic Capacity)**: Single path, no redundancy (N). 99.671%
+- **Tier I (Basic Capacity)**: Single path, no redundancy (N). 99.671%
   availability.
 
-* **Tier II (Redundant Capacity)**: Single path, redundant components (N+1).
+- **Tier II (Redundant Capacity)**: Single path, redundant components (N+1).
   99.741% availability.
 
-* **Tier III (Concurrently Maintainable)**: Multiple paths, N+1 redundancy. Any
+- **Tier III (Concurrently Maintainable)**: Multiple paths, N+1 redundancy. Any
   component can be removed without shutdown. 99.982% availability.
 
-* **Tier IV (Fault Tolerant)**: Fully redundant (2N or 2N+1), multiple active
+- **Tier IV (Fault Tolerant)**: Fully redundant (2N or 2N+1), multiple active
   paths. Withstands a single fault without impacting IT load. 99.995%
   availability.
 
