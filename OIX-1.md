@@ -1,4 +1,4 @@
-# **IXP Technical Requirements OIX-1**  {#ixp-technical-requirements-oix-1}
+# **IXP Technical Requirements OIX-1**
 
 Version 3.1, June 16, 2025 
 
