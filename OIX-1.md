@@ -10,7 +10,7 @@ The keywords used throughout the document are as defined in RFC 2119\.
 
 The IXP **SHOULD** follow the Best Current Operational Practices for an Internet Exchange, posted at [https://github.com/Open-IX/BCOP](https://github.com/Open-IX/BCOP)
 
-## 
+---
 
 ## **Table of Contents**
 
@@ -44,7 +44,7 @@ The IXP **SHOULD** follow the Best Current Operational Practices for an Internet
   - [4.5. Pricing](#pricing)
   - [4.6. Miscellaneous](#miscellaneous)
 
-## 
+--- 
 
 ## Forward
 
@@ -57,7 +57,6 @@ The IXP **SHOULD** follow the Best Current Operational Practices for an Internet
 - Use of AS Number for Route Server(s)  
 - Maximum Pricing Clarification  
 - RPKI use in Route Servers
-
 
 Please feel free to comment and make any suggestions.
 
@@ -82,8 +81,6 @@ OIX Common Definitions \- OIX has created a Glossary of Data Center and Networki
       1. #### **Public Exchange VLAN (IX)**
 
       A switch platform which allows any-to-any interconnection. Customer interfaces with Ethernet frames tagged for the public exchange VLAN **MUST** be forwarded in accordance with the traffic rules indicated in this document.
-
-   ### 
 
    2. ### **Additional Service Offering**
 
@@ -148,8 +145,6 @@ OIX Common Definitions \- OIX has created a Glossary of Data Center and Networki
 
       The IXP **SHOULD** participate in Mutually Agreed Norms for Routing Security (MANRS) [https://www.manrs.org/](https://www.manrs.org/) and **SHOULD** encourage its customer to participate in MANRS.
 
-## 
-
 3. ## **Infrastructure**
 
    1. ### **Switching Platform**
@@ -206,8 +201,6 @@ OIX Common Definitions \- OIX has created a Glossary of Data Center and Networki
 
       If the IXP operates at more than one location, the IXP **MUST** indicate what paths are redundant and **SHOULD** indicate capacity of the links.
 
-## 
-
 4. ## **Operations**
 
    1. ### NOC
@@ -215,24 +208,24 @@ OIX Common Definitions \- OIX has created a Glossary of Data Center and Networki
       1. The IXP **MUST** publish a telephone number, email address or any other means that provides immediate access to technical support, on a website available to its customer, on how to contact operational staff that is capable of managing the IXP infrastructure. The access method **MUST** be available 24x7, note this does not mean staff needs to be available 24x7, but the IXP **MUST** publish staff hours.  
       2. The IXP **MUST** provide and publish a procedure to announce service affecting maintenance to its customer.
 
-   2. ### Monitoring {#monitoring}
+   2. ### Monitoring
 
       1. The IXP **MUST** monitor the exchange platform for performance degradation and service affecting events.  
       2. The IXP **MUST** provide a procedure to inform its customer on performance degradation and service affecting events.
 
-   3. ### Statistics {#statistics}
+   3. ### Statistics
 
       1. The IXP **MUST** publish on a publicly available website the customer on the peering platform and the relevant AS numbers.  
       2. The IXP **MUST** publish on a publicly available website the total sum of all incoming and outgoing traffic in bps from all connected networks on the public peering VLAN. The traffic sum **MUST** include the traffic on customer facing ports only and **MUST** be made up of at least 5 min average traffic measurements. A distinction **MUST** be made between the traffic on the public peering VLAN and any other interconnection service.
 
-   4. ### Website {#website}
+   4. ### Website
 
       The IXP **MUST** have available and maintain a publicly available website where at least the subjects mentioned in this document **MUST** be addressed.
 
-   5. ### Pricing {#pricing}
+   5. ### Pricing
 
       The IXP **MUST** disclose any maximum pricing, terms and conditions (if any) on its website.
 
-   6. ### Miscellaneous {#miscellaneous}
+   6. ### Miscellaneous
 
       The IXP **MUST** publish and maintain an accurate entry for a peering contact and configuration directory such as [https://www.peeringdb.com](https://www.peeringdb.com/) or [https://ixpdb.euro-ix.net/](https://ixpdb.euro-ix.net/) or any regional IXP organizations. This entry **MUST** contain a list of all facilities that the IXP maintains a point of presence.
