@@ -12,79 +12,79 @@ The IXP **SHOULD** follow the Best Current Operational Practices for an Internet
 
 ## 
 
-## **Table of Contents** {#table-of-contents}
+## **Table of Contents**
 
-**[IXP Technical Requirements OIX-1	1](#ixp-technical-requirements-oix-1)**
+**[IXP Technical Requirements OIX-1](#ixp-technical-requirements-oix-1)**
 
-[Table of Contents	2](#table-of-contents)
+[Table of Contens](#table-of-contents)
 
-[Forward	3](#forward)
+[Forward](#forward)
 
-[Definition of Internet Exchange \- IX	4](#definition-of-internet-exchange---ix)
+[Definition of Internet Exchange \- IX](#definition-of-internet-exchange---ix)
 
-[Definition of an Internet Exchange Point \- IXP	4](#definition-of-an-internet-exchange-point---ixp)
+[Definition of an Internet Exchange Point \- IXP](#definition-of-an-internet-exchange-point---ixp)
 
-[Definition of Community Supported IXP	6](#definition-of-community-supported-ixp)
+[Definition of Community Supported IXP](#definition-of-community-supported-ixp)
 
-[Services	7](#services)
+[Services](#services)
 
-[Minimal Service Offering	7](#minimal-service-offering)
+[Minimal Service Offering](#minimal-service-offering)
 
-[Public Exchange VLAN (IX)	7](#public-exchange-vlan-\(ix\))
+[Public Exchange VLAN (IX)](#public-exchange-vlan-\(ix\))
 
-[Additional Service Offering	7](#additional-service-offering)
+[Additional Service Offering](#additional-service-offering)
 
-[Private VLAN (PVLAN)	7](#private-vlan-\(pvlan\))
+[Private VLAN (PVLAN)](#private-vlan-\(pvlan\))
 
-[Physical Interface	7](#physical-interface)
+[Physical Interface](#physical-interface)
 
-[Traffic Forwarding / Fabric Protection	8](#traffic-forwarding-/-fabric-protection)
+[Traffic Forwarding / Fabric Protection](#traffic-forwarding-/-fabric-protection)
 
-[Layer 2	8](#layer-2)
+[Layer 2](#layer-2)
 
-[Layer 3	8](#layer-3)
+[Layer 3](#layer-3)
 
-[Customer Interface	8](#customer-interface)
+[Customer Interface](#customer-interface)
 
-[Conforming to MANRS	9](#conforming-to-manrs)
+[Conforming to MANRS](#conforming-to-manrs)
 
-[Infrastructure	10](#infrastructure)
+[Infrastructure](#infrastructure)
 
-[Switching Platform	10](#switching-platform)
+[Switching Platform](#switching-platform)
 
-[IP Address Space	10](#ip-address-space)
+[IP Address Space](#ip-address-space)
 
-[Route Server	11](#route-server)
+[Route Server](#route-server)
 
-[Topology	12](#topology)
+[Topology](#topology)
 
-[Operations	13](#operations)
+[Operations](#operations)
 
-[NOC	13](#noc)
+[NOC](#noc)
 
-[Monitoring	13](#monitoring)
+[Monitoring](#monitoring)
 
-[Statistics	13](#statistics)
+[Statistics](#statistics)
 
-[Website	13](#website)
+[Website](#website)
 
-[Pricing	14](#pricing)
+[Pricing](#pricing)
 
-[Miscellaneous	14](#miscellaneous)
+[Miscellaneous](#miscellaneous)
 
-[Appendix	15](#heading=h.32hioqz)
+[Appendix](#heading=h.32hioqz)
 
-[Sample Layer 2 Filtering	15](#heading=h.1hmsyys)
+[Sample Layer 2 Filtering](#heading=h.1hmsyys)
 
-[Sample Layer 4 BGP Filtering	16](#heading=h.41mghml)
+[Sample Layer 4 BGP Filtering](#heading=h.41mghml)
 
-[Sample Layer 4 BGP Culling Filter	16](#heading=h.2grqrue)
+[Sample Layer 4 BGP Culling Filter](#heading=h.2grqrue)
 
-[Sample IXP Port Configuration	17](#heading=h.vx1227)
+[Sample IXP Port Configuration](#heading=h.vx1227)
 
 ## 
 
-## **Forward** {#forward}
+## **Forward**
 
 This update is to provide a single OIX-1 Specification for “Regular” and “Community Supported” IXP submissions and to also include some sample configurations for IXP Fabric Switches.
 
@@ -98,11 +98,11 @@ ix-group@oix.org
 Chair IX Committee  
 June 16, 2025  
 
-## **Definition of Internet Exchange \- IX** {#definition-of-internet-exchange---ix}
+## **Definition of Internet Exchange \- IX**
 
 An IX is the entity that operates one or more switching fabrics at one or more locations for the purpose of peering (interconnection).
 
-## **Definition of an Internet Exchange Point \- IXP** {#definition-of-an-internet-exchange-point---ixp}
+## **Definition of an Internet Exchange Point \- IXP**
 
 From IX-F at [https://www.ix-f.net/ixp-definition.html](https://www.ix-f.net/ixp-definition.html) \- An Internet Exchange Point (IXP) is a network facility that enables the interconnection of more than two independent Autonomous Systems, primarily for the purpose of facilitating the exchange of Internet traffic.
 
@@ -168,25 +168,25 @@ To achieve “Community Supported” Status for this certification:
 
 ## 
 
-## **Services** {#services}
+## **Services**
 
-### **Minimal Service Offering** {#minimal-service-offering}
+### **Minimal Service Offering**
 
 The IXP **MUST** provide the minimum services described below. This also allows the IXP operator to provide additional services, or methods of interconnection.
 
-#### **Public Exchange VLAN (IX)** {#public-exchange-vlan-(ix)}
+#### **Public Exchange VLAN (IX)**
 
 A switch platform which allows any-to-any interconnection. Customer interfaces with Ethernet frames tagged for the public exchange VLAN **MUST** be forwarded in accordance with the traffic rules indicated in this document.
 
-### **Additional Service Offering** {#additional-service-offering}
+### **Additional Service Offering**
 
 The IXP **MAY** provide additional services, as long as they are described on a publicly available website of the IXP.
 
-#### **Private VLAN (PVLAN)** {#private-vlan-(pvlan)}
+#### **Private VLAN (PVLAN)**
 
 A private switch platform, whereby any two or more parties may consent to interconnect through either the same physical port that delivers their access to the Public Exchange VLAN or alternatively dedicated physical port(s). If a PVLAN service is offered, in case there are exactly two parties in the private VLAN the connection **MUST** be delivered guaranteed congestion free. In case of more than two parties the service **MAY** be provided on a best efforts basis.
 
-### **Physical Interface** {#physical-interface}
+### **Physical Interface**
 
 The IXP **MUST** offer IEEE 802.3 Ethernet connectivity on a common switch infrastructure. Service offerings **MAY** be available at any IEEE defined rate, including IEEE 802.3ad or IEEE 802.1AX link aggregation of any of these rates.
 
@@ -196,9 +196,9 @@ The IXP  **SHOULD NOT** allow for physical port speed and duplex negotiation.
 
 The IXP **MUST** protect the IXP fabric from user misconfiguration, broadcast / unknown and multicast storms, and port flapping.
 
-### **Traffic Forwarding / Fabric Protection** {#traffic-forwarding-/-fabric-protection}
+### **Traffic Forwarding / Fabric Protection**
 
-#### **Layer 2** {#layer-2}
+#### **Layer 2**
 
 The IXP **MUST** forward frames with the following Ethertypes:
 
@@ -215,7 +215,7 @@ If the IXP has reason to limit certain traffic, the IXP **MUST** publish on a pu
 
 If the IXP applies a MAC address locking mechanism on a participants port, then the IXP **MUST** make known to customers the process to update MAC addresses.
 
-#### **Layer 3** {#layer-3}
+#### **Layer 3**
 
 The IXP **SHOULD** provide a method to ensure that BGP Peering Sessions only originate from the IPv4 and IPv6 Ranges utilized by the IXP.
 
@@ -223,19 +223,19 @@ The IXP **SHOULD** provide a method to ensure that BGP Peering Sessions only ori
 
 Per interface access lists as described in BCP214 **SHOULD** be implemented on each member / participant facing port.
 
-### **Customer Interface** {#customer-interface}
+### **Customer Interface**
 
 The IXP **MUST** provide a clear demarcation point between the IXP services and the customer. This can be either directly on the exchange or via a common demarcation point available to the participants.
 
-### **Conforming to MANRS** {#conforming-to-manrs}
+### **Conforming to MANRS**
 
 The IXP **SHOULD** participate in Mutually Agreed Norms for Routing Security (MANRS) [https://www.manrs.org/](https://www.manrs.org/) and **SHOULD** encourage its members / participants to participate in MANRS.
 
 ## 
 
-## **Infrastructure** {#infrastructure}
+## **Infrastructure**
 
-### **Switching Platform** {#switching-platform}
+### **Switching Platform**
 
 The IXP switching platform **MUST** have backplane capacity to sufficiently handle the aggregate traffic of all customer facing ports, without oversubscription. If individual switching elements contain multiple switch fabric modules, the same conditions **MUST** apply during single component failures.
 
@@ -247,13 +247,13 @@ If the IXP does not have full path diversity between two discrete switching elem
 
 The IXP **SHOULD** describe on a publicly available website the switching platform and the redundancy measures implemented to overcome single component failures.
 
-### **IP Address Space** {#ip-address-space}
+### **IP Address Space**
 
 In order to be independent of any of the connected parties, the IP space used on the “Public Exchange VLAN” **MUST** be Provider Independent space or other IP space directly assigned by a RIR for the purpose of operating an IXP. This applies to both IPv4 and IPv6. The IXP operator is responsible for obtaining address space from the respective RIR, as well as providing all material for justification, documentation, and applicable fees as required by the RIR.
 
 ### 
 
-### **Route Server** {#route-server}
+### **Route Server**
 
 If a route server service is offered then it **MUST** support both IPv4 and IPv6, and 16-bit and 32-bit ASNs.  The AS number used for the route server implementation **MUST** be a unique AS number assigned by one of the RIRs.  The AS **MAY** be utilized by multiple IX fabrics operated by the same entity. The IXP **SHOULD** use a 16 bit ASN. 
 
@@ -285,41 +285,41 @@ Route Servers filtering policies **MUST** be disclosed to its members / particip
 
 A looking glass **SHOULD** be made available to the members / participants to verify announcements.
 
-### **Topology** {#topology}
+### **Topology**
 
 If the IXP operates at more than one location, the IXP **MUST** indicate what paths are redundant and **SHOULD** indicate capacity of the links.
 
 ## 
 
-## **Operations** {#operations}
+## **Operations**
 
-### **NOC** {#noc}
+### **NOC**
 
 The IXP **MUST** publish a telephone number, email address or any other means that provides immediate access to technical support, on a website available to its participants, on how to contact operational staff that is capable of managing the IXP infrastructure. The access method **MUST** be available 24x7, note this does not mean staff needs to be available 24x7, but the IXP **MUST** publish staff hours.
 
 The IXP **MUST** provide and publish a procedure to announce service affecting maintenance to its participants.
 
-### **Monitoring** {#monitoring}
+### **Monitoring**
 
 The IXP **MUST** monitor the exchange platform for performance degradation and service affecting events.
 
 The IXP **MUST** provide a procedure to inform its participants on performance degradation and service affecting events.
 
-### **Statistics** {#statistics}
+### **Statistics**
 
 The IXP **MUST** publish on a publicly available website the participants on the peering platform and the relevant AS numbers.
 
 The IXP **MUST** publish on a publicly available website the total sum of all incoming and outgoing traffic in bps from all connected networks on the public peering VLAN. The traffic sum **MUST** include the traffic on customer facing ports only and **MUST** be made up of 5 min average traffic measurements. A distinction **MUST** be made between the traffic on the public peering VLAN and any other interconnection service.
 
-### **Website** {#website}
+### **Website**
 
 The IXP **MUST** have available and maintain a publicly available website where at least the subjects mentioned in this document **MUST** be addressed.
 
-## **Pricing** {#pricing}
+## **Pricing**
 
 The IXP **MUST** disclose any pricing, terms and conditions (if any) on its website.
 
-## **Miscellaneous** {#miscellaneous}
+## **Miscellaneous**
 
 The IXP **MUST** publish and maintain an accurate entry for a peering contact and configuration directory such as [https://www.peeringdb.com](https://www.peeringdb.com/) or [https://ixpdb.euro-ix.net/](https://ixpdb.euro-ix.net/) or any regional IXP organizations. This entry **MUST** contain a list of all facilities that the IXP maintains a point of presence.
 
