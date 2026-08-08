@@ -15,62 +15,34 @@ The IXP **SHOULD** follow the Best Current Operational Practices for an Internet
 ## **Table of Contents**
 
 **[IXP Technical Requirements OIX-1](#ixp-technical-requirements-oix-1)**
-
-[Table of Contens](#table-of-contents)
-
-[Forward](#forward)
-
-[Definition of Internet Exchange \- IX](#definition-of-internet-exchange---ix)
-
-[Definition of an Internet Exchange Point \- IXP](#definition-of-an-internet-exchange-point---ixp)
-
-[Definition of Community Supported IXP](#definition-of-community-supported-ixp)
-
-[Services](#services)
-
-[Minimal Service Offering](#minimal-service-offering)
-
-[Public Exchange VLAN (IX)](#public-exchange-vlan-\(ix\))
-
-[Additional Service Offering](#additional-service-offering)
-
-[Private VLAN (PVLAN)](#private-vlan-\(pvlan\))
-
-[Physical Interface](#physical-interface)
-
-[Traffic Forwarding / Fabric Protection](#traffic-forwarding-/-fabric-protection)
-
-[Layer 2](#layer-2)
-
-[Layer 3](#layer-3)
-
-[Customer Interface](#customer-interface)
-
-[Conforming to MANRS](#conforming-to-manrs)
-
-[Infrastructure](#infrastructure)
-
-[Switching Platform](#switching-platform)
-
-[IP Address Space](#ip-address-space)
-
-[Route Server](#route-server)
-
-[Topology](#topology)
-
-[Operations](#operations)
-
-[NOC](#noc)
-
-[Monitoring](#monitoring)
-
-[Statistics](#statistics)
-
-[Website](#website)
-
-[Pricing](#pricing)
-
-[Miscellaneous](#miscellaneous)
+- [Table of Contens](#table-of-contents)
+- [Forward](#forward)
+- [Definition of Internet Exchange \- IX](#definition-of-internet-exchange---ix)
+- [Definition of an Internet Exchange Point \- IXP](#definition-of-an-internet-exchange-point---ixp)
+- [Definition of Community Supported IXP](#definition-of-community-supported-ixp)
+- [Services](#services)
+  - [Minimal Service Offering](#minimal-service-offering)
+    - [Public Exchange VLAN (IX)](#public-exchange-vlan-\(ix\))
+  - [Additional Service Offering](#additional-service-offering)
+    - [Private VLAN (PVLAN)](#private-vlan-\(pvlan\))
+  - [Physical Interface](#physical-interface)
+  - [Traffic Forwarding / Fabric Protection](#traffic-forwarding-/-fabric-protection)
+    - [Layer 2](#layer-2)
+    - [Layer 3](#layer-3)
+  - [Customer Interface](#customer-interface)
+  - [Conforming to MANRS](#conforming-to-manrs)
+- [Infrastructure](#infrastructure)
+  - [Switching Platform](#switching-platform)
+  - [IP Address Space](#ip-address-space)
+  - [Route Server](#route-server)
+  - [Topology](#topology)
+- [Operations](#operations)
+  - [NOC](#noc)
+  - [Monitoring](#monitoring)
+  - [Statistics](#statistics)
+  - [Website](#website)
+- [Pricing](#pricing)
+- [Miscellaneous](#miscellaneous)
 
 ## 
 
