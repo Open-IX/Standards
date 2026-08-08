@@ -72,16 +72,6 @@ The IXP **SHOULD** follow the Best Current Operational Practices for an Internet
 
 [Miscellaneous](#miscellaneous)
 
-[Appendix](#heading=h.32hioqz)
-
-[Sample Layer 2 Filtering](#heading=h.1hmsyys)
-
-[Sample Layer 4 BGP Filtering](#heading=h.41mghml)
-
-[Sample Layer 4 BGP Culling Filter](#heading=h.2grqrue)
-
-[Sample IXP Port Configuration](#heading=h.vx1227)
-
 ## 
 
 ## **Forward**
