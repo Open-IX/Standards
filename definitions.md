@@ -1,6 +1,6 @@
 # Glossary of Data Center and Networking Nomenclature
 
-*This is currently a work in progress and comments are welcome*
+*Version 1.0*
 
 ## Table of Contents
 - [Glossary of Data Center and Networking Nomenclature](#glossary-of-data-center-and-networking-nomenclature)
